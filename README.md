@@ -6,7 +6,7 @@ Performance und Verfügbarkeit eines Netzwerks überwachen und Ergebnisse interp
 Zwei lokale Netze, SNMP/VLAN fähige Netzwerkgeräte, WLAN Komponenten.
 
 ### Inhalt: 
-[Be A Switch Übung](BeASwitch Übung.md)
+[Be A Switch Übung](M145/BeASwitch-Übung.md)
 
 ![image](https://github.com/user-attachments/assets/e11eba83-39d5-4a1d-b04d-9fda2d06ccc0)
 
