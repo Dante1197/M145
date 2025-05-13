@@ -7,6 +7,7 @@
 ## 🧠 Es gibt 4 Haupt-Szenarien:
 
 ✅ Szenario 1: Ziel-MAC ist bekannt, Quell-MAC ist neu
+
 	•	➕ Neue MAC-Adresse (Source) wird gelernt
 	•	📦 Frame wird nur an den Port gesendet, wo die Ziel-MAC sitzt
 
@@ -18,6 +19,7 @@ Antwort:
 ⸻
 
 ✅ Szenario 2: Ziel-MAC ist bekannt, Quell-MAC ist schon bekannt
+
 	•	🚫 Keine neue MAC-Adresse nötig
 	•	📦 Frame wird nur an Ziel-Port gesendet
 
@@ -29,6 +31,7 @@ Antwort:
 ⸻
 
 ✅ Szenario 3: Ziel-MAC ist unbekannt, Quell-MAC ist neu
+
 	•	➕ Neue MAC-Adresse wird gelernt
 	•	📡 Frame wird an alle anderen Ports außer dem Eingangsport gesendet (Flooding)
 
@@ -40,6 +43,7 @@ Antwort:
 ⸻
 
 ✅ Szenario 4: Ziel-MAC ist unbekannt, Quell-MAC ist schon bekannt
+
 	•	🚫 Keine neue MAC-Adresse nötig
 	•	📡 Frame wird an alle anderen Ports außer dem Eingangsport gesendet (Flooding)
 
