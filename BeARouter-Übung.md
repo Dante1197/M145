@@ -5,7 +5,7 @@ Spickzettel: Be A Router
 
 Ein Paket kommt an → Du musst entscheiden, an welchen Port (ethX) der Router das IPv4-Paket weiterleiten soll.
 
-⸻
+---
 
 So gehst du vor – Schritt für Schritt
 
@@ -19,11 +19,11 @@ Beispiel:
 
 Nutze z. B. Subnet Calculator bei Bedarf.
 
-**3. Wenn mehrere passen, nimm den präzisesten Eintrag (größte Präfixlänge, z. B. /27 ist präziser als /21).
+3. Wenn mehrere passen, nimm den präzisesten Eintrag (größte Präfixlänge, z. B. /27 ist präziser als /21).
 
-**4. Schaue in der gleichen Zeile in der Routing-Tabelle nach, welcher dev ethX verwendet wird → das ist der Port, den du auswählen musst!
+4. Schaue in der gleichen Zeile in der Routing-Tabelle nach, welcher dev ethX verwendet wird → das ist der Port, den du auswählen musst!
 
-⸻
+---
 
 3. Subnetz-Tipps (CIDR Basics)
 
@@ -46,7 +46,7 @@ CIDR	Hosts nutzbar	Subnetzmaske
 /23	510	255.255.254.0
 
 
-⸻
+---
 
 4. Netzwerkadressen schnell bestimmen
 
@@ -56,14 +56,14 @@ Beispiel:
 	•	IP: 192.168.131.250
 	•	Maske (z. B. /21 → 255.255.248.0)
 	•	Rechne: 192.168.128.0 → Netzadresse
-
-⸻
+ 
+---
 
 ❗ 5. Wenn keine Route passt?
 
 → Standardroute 0.0.0.0/0 verwenden (letzter Ausweg).
 
-⸻
+---
 
 ⚠️ Fehler vermeiden:
 	•	Achte genau auf Präfix-Länge → nicht einfach ersten passenden Eintrag nehmen.
