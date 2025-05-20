@@ -45,18 +45,6 @@ CIDR	Hosts nutzbar	Subnetzmaske
 
 /23	510	255.255.254.0
 
-
----
-
-4. Netzwerkadressen schnell bestimmen
-
-IP-Adresse & Subnetzmaske → bitweises UND = Netzadresse
-
-Beispiel:
-	•	IP: 192.168.131.250
-	•	Maske (z. B. /21 → 255.255.248.0)
-	•	Rechne: 192.168.128.0 → Netzadresse
- 
 ---
 
 ❗ 5. Wenn keine Route passt?
