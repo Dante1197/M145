@@ -51,3 +51,9 @@ Antwort:
 	•	🔘 No new MAC address table entry required
 	•	✅ Send to alle Ports außer dem Eingangsport
 	•	❌ NICHT an den Eingangsport
+
+## Screenshot Abgabe der Aufgabe 
+
+![BeASwitch30Points](https://github.com/user-attachments/assets/a47f800e-c70b-4b82-8f60-9a304e75a719)
+
+
