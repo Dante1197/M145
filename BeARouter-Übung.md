@@ -28,6 +28,7 @@ Nutze z. B. Subnet Calculator bei Bedarf.
 3. Subnetz-Tipps (CIDR Basics)
 
 CIDR	Hosts nutzbar	Subnetzmaske
+
 /30	2	255.255.255.252
 
 /29	6	255.255.255.248
