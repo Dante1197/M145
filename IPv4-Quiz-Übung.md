@@ -13,7 +13,7 @@ Subnetting heisst: Du nimmst ein großes Netzwerk (z. B. 192.168.0.0/24) und t
 
 #### Beispiel-Quizfrage:
 
-''' Divide 192.168.130.0/23 into 4 subnets. What is the 3rd subnet? '''
+**Divide 192.168.130.0/23 into 4 subnets. What is the 3rd subnet?**
 
 ✅ Schritt-für-Schritt:
 	1.	/23 = 512 IPs → Du willst 4 Subnetze
@@ -49,7 +49,7 @@ Du findest sie, indem du ein bitweises AND zwischen der IP-Adresse und der Subne
 
 #### Beispiel-Quizfrage:
 
-''' What is the network address of 99.252.194.61/22? '''
+**What is the network address of 99.252.194.61/22?**
 
 ✅ Schritt-für-Schritt:
 	1.	IP: 99.252.194.61
