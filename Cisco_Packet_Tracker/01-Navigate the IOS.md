@@ -1,0 +1,193 @@
+Packet Tracer - Navigate the IOS
+
+Instructions
+
+Part 1: Establish Basic Connections, Access the CLI, and Explore Help
+
+Step 1: Connect PC1 to S1 using a console cable.
+
+a. Click the Connections icon (the one that looks like a lightning bolt) in the lower left corner of the Packet Tracer window.
+b. Select the light blue Console cable by clicking it. The mouse pointer will change to what appears to be a connector with a cable dangling from it.
+c. Click PC1. A window displays an option for an RS-232 connection. Connect the cable to the RS-232 port.
+d. Drag the other end of the console connection to the S1 switch and click the switch to access the connection list.
+e. Select the Console port to complete the connection.
+
+Step 2: Establish a terminal session with S1.
+
+a. Click PC1 and then select the Desktop tab.
+b. Click the Terminal application icon. Verify that the Port Configuration default settings are correct.
+
+Question: What is the setting for bits per second?
+**A: 9600**
+
+c. The screen that appears may have several messages displayed. Somewhere on the screen there should be a Press RETURN to get started! message. Press ENTER.
+
+Question: What is the prompt displayed on the screen?
+A: S1>
+
+Step 3: Explore the IOS Help.
+
+a. The IOS can provide help for commands depending on the level accessed. The prompt currently displayed is called User EXEC, and the device is waiting for a command. The most basic form of help is to type a question mark (?) at the prompt to display a list of commands.
+
+Open Configuration Window
+
+S1> ?
+
+Question: Which command begins with the letter ‘C’?
+**A: Connect | Open a terminal connection**
+
+b. At the prompt, type t and then a question mark (?).
+
+S1> t?
+
+Question: Which commands are displayed?
+**A: Telnet, Terminal, Traceroute**
+
+At the prompt, type te and then a question mark (?).
+
+S1> te?
+
+Question: Which commands are displayed?
+**A: Telnet, Terminal**
+This type of help is known as context-sensitive help. It provides more information as the commands are expanded.
+
+⸻
+
+Part 2: Explore EXEC Modes
+
+In Part 2 of this activity, you will switch to privileged EXEC mode and issue additional commands.
+
+Step 1: Enter privileged EXEC mode.
+
+a. At the prompt, type the question mark (?).
+
+S1> ?
+
+Question: What information is displayed for the enable command?
+**A: Turn on privileged commands**
+
+b. Type en and press the Tab key.
+
+S1> en
+
+Question: What displays after pressing the Tab key?
+**A: enable**
+
+Question: What would happen if you typed te at the prompt?
+**A: The command would auto-complete to telnet**
+
+c. Enter the enable command and press ENTER.
+
+Question: How does the prompt change?
+**A: From S1> to S1#**
+
+d. When prompted, type the question mark (?).
+
+S1# ?
+
+One command starts with the letter ‘C’ in user EXEC mode.
+Question: How many commands are displayed now that privileged EXEC mode is active?
+**A: 5 commands starting with ‘C’ (cdp, clear, clock, configure, connect)**
+
+---
+
+Step 2: Enter Global Configuration mode
+
+a. When in privileged EXEC mode, one of the commands starting with the letter ‘C’ is configure. Type either the full command or enough of the command to make it unique. Press the  key to issue the command and press ENTER.
+
+**S1# configure**
+
+Question: What is the message that is displayed?
+**A: Configuring from terminal, memory, or network [terminal]?**
+
+b. Press Enter to accept the default parameter that is enclosed in brackets [terminal].
+
+Question: How does the prompt change?
+A: From S1# to S1(config)#
+
+c. This is called global configuration mode. This mode will be explored further in upcoming activities and labs. For now, return to privileged EXEC mode by typing end, exit, or Ctrl-Z.
+
+S1(config)# exit
+S1#
+
+---
+
+Part 3: Set the Clock
+
+Step 1: Use the clock command.
+
+a. Use the clock command to further explore Help and command syntax. Type show clock at the privileged EXEC prompt.
+
+S1# show clock
+
+Question: What information is displayed? What is the year that is displayed?
+**A: 0:0:6.837 UTC Mon Mar 1 1993 — The year is 1993**
+
+b. Use the context-sensitive help and the clock command to set the time on the switch to the current time. Enter the command clock and press ENTER.
+
+S1# clock
+
+Question: What information is displayed?
+**A: % Incomplete command**
+
+c. The “% Incomplete command” message is returned by the IOS. This indicates that the clock command needs more parameters. Any time more information is needed, help can be provided by typing a space after the command and the question mark (?).
+
+S1# clock ?
+
+Question: What information is displayed?
+**A: set Set the time and date**
+
+d. Set the clock using the clock set command. Proceed through the command one step at a time.
+
+S1# clock set ?
+
+Questions: What information is being requested?
+**A: HH:MM:SS Current Time**
+
+What would have been displayed if only the clock set command had been entered, and no request for help was made by using the question mark?
+**A: % Incomplete command**
+
+e. Based on the information requested by issuing the clock set ? command, enter a time of 3:00 p.m. by using the 24-hour format of 15:00:00. Check to see if more parameters are needed.
+
+S1# clock set 15:00:00 ?
+
+The output returns a request for more information:
+**A: <1-31> Day of the month**
+**A: MONTH Month of the year**
+
+f. Attempt to set the date to 01/31/2035 using the format requested. It may be necessary to request additional help using context-sensitive help to complete the process. When finished, issue the show clock command to display the clock setting. The resulting command output should display as:
+
+S1# show clock
+**A: 15:0:4.869 UTC Tue Jan 31 2035**
+
+g. If you were not successful, try the following command to obtain the output above:
+
+S1# clock set 15:00:00 31 Jan 2035
+
+---
+
+Step 2: Explore additional command messages.
+
+a. The IOS provides various outputs for incorrect or incomplete commands. Continue to use the clock command to explore additional messages that may be encountered as you learn to use the IOS.
+
+b. Issue the following commands and record the messages:
+
+S1# cl
+
+Questions: What information was returned?
+**A: ambigous command "cl"**
+
+S1# clock
+
+Question: What information was returned?
+**A: % Incomplete command**
+
+S1# clock set 25:00:00
+
+Question: What information was returned?
+**A: % Invalid input detected at ‘^’ marker.**
+
+S1# clock set 15:00:00 32
+
+Question: What information was returned?
+**A: % Invalid input detected at ‘^’ marker.**
