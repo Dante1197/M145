@@ -62,17 +62,17 @@ copy running-config startup-config
 
 ## Part 2: Configure PCs
 
-Step 1: Assign IP Addresses
+**Step 1: Assign IP Addresses**
 
 PC1:
-	•	Click PC1 > Desktop > IP Configuration
-	•	IP Address: 192.168.1.1
-	•	Subnet Mask: 255.255.255.0
-	•	Default Gateway: (leave blank)
+- Click PC1 > Desktop > IP Configuration
+- IP Address: 192.168.1.1
+- Subnet Mask: 255.255.255.0
+- Default Gateway: (leave blank)
 
 PC2:
-	•	IP Address: 192.168.1.2
-	•	Subnet Mask: 255.255.255.0
+- IP Address: 192.168.1.2
+- Subnet Mask: 255.255.255.0
 
 ---
 
