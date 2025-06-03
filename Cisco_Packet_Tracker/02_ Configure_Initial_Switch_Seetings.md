@@ -1,4 +1,4 @@
-✅ Part 1: Verify the Default Switch Configuration
+## Part 1: Verify the Default Switch Configuration
 
 ``` 
 Switch> enable
@@ -22,7 +22,7 @@ Switch# show running-config
 ``` 
 --- 
 
-✅ Part 2: Create a Basic Switch Configuration (S1)
+## Part 2: Create a Basic Switch Configuration (S1)
 
 ``` 
 Switch# configure terminal
@@ -102,7 +102,7 @@ S1(config)# exit
 ``` 
 ---
 
-✅ Part 3: Configure MOTD Banner
+## Part 3: Configure MOTD Banner
 
 ``` 
 S1# config t
@@ -119,7 +119,7 @@ S1(config)# exit
 ``` 
 ---
 
-✅ Part 4: Save Config to NVRAM
+## Part 4: Save Config to NVRAM
 
 ``` 
 S1# show run
@@ -141,7 +141,7 @@ Building configuration...
 
 ---
 
-✅ Part 5: Configure S2 (Same Steps)
+## Part 5: Configure S2 (Same Steps)
 
 ``` 
 Switch> enable
