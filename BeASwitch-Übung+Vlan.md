@@ -57,3 +57,9 @@ Antwort:
 ![BeASwitch30Points](https://github.com/user-attachments/assets/a47f800e-c70b-4b82-8f60-9a304e75a719)
 
 
+## Screenshot Abgabe mit VLAN Modus Aktiviert 29/30 Punkte (habe mich beim letzten versehen....) 
+
+![BeAswitchVlan29Points](https://github.com/user-attachments/assets/807a6d06-4c30-456a-baa8-26593d104620)
+
+
+
