@@ -146,7 +146,7 @@ Field	Value
 
 ![Screenshot 2025-07-08 at 09 25 13](https://github.com/user-attachments/assets/4d3962a9-03e6-4cd5-9206-9113efca2b3c)   
 
-![Screenshot 2025-07-08 at 09 25 38](https://github.com/user-attachments/assets/4a0b703d-349f-42e7-b434-3c6ff25ec36b)
 
+![Screenshot 2025-07-08 at 09 42 44](https://github.com/user-attachments/assets/39b290e8-e206-449a-983b-68dba3f6a55a)
 
 
