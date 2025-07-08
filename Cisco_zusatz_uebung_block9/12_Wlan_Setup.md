@@ -75,7 +75,20 @@ ping 192.168.1.10
 
 ---
 
-### 5. Configure DHCP on Server
+### 5. Router Configuration (Simulated Default Gateway)
+
+```
+enable
+configure terminal
+interface FastEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+exit
+exit
+write memory
+```
+
+### 6. Configure DHCP on Server
 	•	IP Address: 192.168.1.20
 	•	Subnet Mask: 255.255.255.0
 
@@ -90,14 +103,14 @@ Field	Value
 
 ---
 
- ### 6. Configure Access Point (AP)
+ ### 7. Configure Access Point (AP)
 - Automatically gets IP via DHCP.
 - If not: switch to static, then back to DHCP to force renewal.
 - From WLC Web GUI > Wireless tab: Confirm AP is connected.
 
 ---
 
-### 7. Configure Laptop (Wireless Client)
+### 8. Configure Laptop (Wireless Client)
 
 1.	Physical Tab:
 - Power off
@@ -115,14 +128,14 @@ Field	Value
 
 ---
 
-### 8. Test Connectivity
+### 9. Test Connectivity
 - On Laptop:
 - ipconfig /all
 - ping 192.168.1.20 (server)
 
 ---
 
-### 9. Simulation Mode – CAPWAP Traffic
+### 10. Simulation Mode – CAPWAP Traffic
 1.	Switch to Simulation Mode
 2.	Set filters: ICMP and CAPWAP
 3.	On Laptop: ping 192.168.1.100 (PC)
